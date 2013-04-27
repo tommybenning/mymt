@@ -1,0 +1,5 @@
+<% @openings.each do |opening| %>
+  <p>Therapist name: <%= opening.user.full_name %></p>
+  <p>Open from: <%= opening.start.to_s(:pretty) %></p>
+  <p>Open until: <%= opening.end.to_s(:pretty) %></p>
+<% end %>
